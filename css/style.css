@@ -554,6 +554,7 @@ ul {
   display: block;
   margin-bottom: 5.625rem;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .main .main_get_experience .main_get_experience_wrapper {
   display: -webkit-box;
