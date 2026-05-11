@@ -834,11 +834,7 @@ ul {
     row-gap: 1.875rem;
   }
   .header .header_logo_menu .header_menu .header_nav .header_nav_menu > li a {
-    color: #323232;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: none;
+    font-size: 1.25rem;
   }
   .header .header_logo_menu .header_menu .header_nav .header_nav_menu > li a:hover {
     color: #f78434;
@@ -859,7 +855,7 @@ ul {
     padding-top: 6.625rem;
   }
   .main .main_cont .main_find_your_custom {
-    padding-bottom: 6.25rem;
+    padding-bottom: 1.875rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -876,51 +872,25 @@ ul {
     padding-bottom: 1.25rem;
   }
   .main .main_cont .main_find_your_custom .main_find_your_custom_left > div {
-    position: relative;
-    border-radius: 1.8125rem;
-    background: #fff;
-    -webkit-box-shadow: 0px 17px 42px 0px rgba(0, 0, 0, 0.12);
-            box-shadow: 0px 17px 42px 0px rgba(0, 0, 0, 0.12);
-    max-width: 28.6875rem;
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
   }
   .main .main_cont .main_find_your_custom .main_find_your_custom_left > div > input:first-of-type {
-    border: none;
-    width: 100%;
-    color: #bbb;
-    font-size: 1rem;
-    font-weight: 400;
-    padding-top: 1rem;
-    padding-left: 4.5rem;
-    padding-bottom: 1rem;
-    border-radius: 1.8125rem;
-    background-color: #fff;
     -webkit-box-shadow: 0px 17px 42px 0px rgba(0, 0, 0, 0.12);
             box-shadow: 0px 17px 42px 0px rgba(0, 0, 0, 0.12);
-    background-image: url("../image/main/find_your_image/letter.svg");
-    background-repeat: no-repeat;
-    background-position: 7% 50%;
+    margin-bottom: 1.25rem;
   }
   .main .main_cont .main_find_your_custom .main_find_your_custom_left > div > input:last-of-type {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    border-radius: 1.8125rem;
-    background: #f78434;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 1rem 2.3125rem;
+    position: static;
+    margin-bottom: 1.25rem;
+    width: 100%;
   }
   .main .main_cont .main_find_your_custom .main_find_your_custom_right picture img {
     border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
-    max-width: 33.75rem;
-    width: 100%;
-    aspect-ratio: 540/764;
   }
   .main .main_cont .main_company_logo > ul {
-    row-gap: 0.625rem;
-    padding-bottom: 5.625rem;
+    row-gap: 0.9375rem;
+    padding-bottom: 1.875rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -932,14 +902,13 @@ ul {
   }
   .main .main_cont .main_company_logo > ul > li > picture > img {
     width: 100%;
-    max-width: 20.625rem;
+    max-width: 18.75rem;
   }
   .main .main_we_provide {
     color: #323232;
   }
   .main .main_we_provide .main_we_provide_wrapper {
-    max-width: 75.3125rem;
-    padding-left: calc(50% - 637px);
+    padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
   .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content {
@@ -948,6 +917,8 @@ ul {
             column-gap: 0rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    row-gap: 1.25rem;
+    padding-bottom: 1.875rem;
   }
   .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content .main_we_provide_left {
     -webkit-column-gap: 0rem;
@@ -955,6 +926,16 @@ ul {
             column-gap: 0rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    row-gap: 1.25rem;
+  }
+  .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content .main_we_provide_left > picture {
+    width: 100%;
+    max-width: 26.875rem;
+  }
+  .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content .main_we_provide_left > picture > img {
+    width: 100%;
+    max-width: 26.875rem;
+    border-radius: 20px;
   }
   .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content .main_we_provide_left > div {
     max-width: 18.75rem;
@@ -981,10 +962,8 @@ ul {
             flex-direction: column;
   }
   .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content > .main_we_provide_right > h2 {
-    font-size: 2.625rem;
-    font-weight: 700;
-    line-height: 3.875rem;
-    letter-spacing: 0.05rem;
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
     padding-bottom: 1.25rem;
   }
   .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content > .main_we_provide_right > p {
@@ -995,32 +974,18 @@ ul {
     letter-spacing: 0.071875rem;
   }
   .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content > .main_we_provide_right > p:last-of-type {
-    padding-top: 1.25rem;
-    padding-bottom: 2.5rem;
+    padding-top: 0.625rem;
+    padding-bottom: 1.25rem;
   }
   .main .main_we_provide .main_we_provide_wrapper .main_we_provide_content > .main_we_provide_right > a {
-    max-width: 10.75rem;
-    padding: 1.125rem 2.4375rem;
-    background-color: #f78434;
-    color: #fff;
-    border-radius: 1.8125rem;
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
   }
   .main .main_cont .main_start_using_our_product {
-    background-color: #58bebf;
-    border-radius: 1.25rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 3.75rem;
-    padding-right: 5.9375rem;
-    overflow: hidden;
-    margin-bottom: 9rem;
+    padding-right: 0.625rem;
+    margin-bottom: 1.875rem;
+    padding-left: 0.625rem;
   }
   .main .main_cont .main_start_using_our_product .main_start_using_left {
     display: none;
@@ -1035,15 +1000,10 @@ ul {
   }
   .main .main_cont .main_start_using_our_product .main_start_using_right > h2 {
     font-size: 1.5625rem;
-    font-weight: 700;
     line-height: 1.25rem;
-    letter-spacing: 0.05rem;
   }
   .main .main_cont .main_start_using_our_product .main_start_using_right > p {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6875rem;
-    letter-spacing: 0.071875rem;
+    padding-bottom: 0.625rem;
   }
   .main .main_cont .main_start_using_our_product .main_start_using_right > div {
     -ms-flex-wrap: wrap;

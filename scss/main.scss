@@ -641,67 +641,7 @@ ul {
 
 // media < 767px
 @media screen and (max-width: 767px) {
-    // .header_nav {
-    //     display: none;
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: #fff;
-    //     padding: rem(100) rem(30) rem(30) rem(30);
-    //     transition: left 0.3s ease 0s;
-    //     overflow: auto;
-    // }
-    // .header_nav_menu > li {
-    //     flex-wrap: wrap;
-    //     margin: 0 0 rem(30) 0;
-    // }
-    // .header_nav_menu > li:last-child {
-    //     margin-bottom: 0;
-    // }
-    // .menu_icon {
-    //     display: block;
-    //     z-index: 5;
-    //     position: relative;
-    //     width: 30px;
-    //     height: 18px;
-    //     cursor: pointer;
-
-    //     span {
-    //         display: block;
-    //         left: 0;
-    //         position: absolute;
-    //         width: 100%;
-    //         height: 10%;
-    //         background-color: $colorBlack;
-    //         transition: all 0.3s ease 0s;
-    //     }
-    //     &:before,
-    //     &:after {
-    //         left: 0;
-    //         position: absolute;
-    //         width: 100%;
-    //         height: 10%;
-    //         background-color: $colorBlack;
-    //         transition: all 0.3s ease 0s;
-    //     }
-    //     &:before,
-    //     &:after {
-    //         content: "";
-    //     }
-    //     &:before {
-    //         top: 0;
-    //     }
-    //     &:after {
-    //         bottom: 0;
-    //     }
-    //     span {
-    //         top: 50%;
-    //         transform: scale(1) translate(0px, -50%);
-    //     }
-    // }
-
+    
     .header {
         padding-top: rem(40);
         padding-bottom: rem(36);
@@ -802,11 +742,7 @@ ul {
                         row-gap: rem(30);
                         & > li {
                             a {
-                                color: $colorBlack;
-                                text-align: center;
-                                font-size: rem(16);
-                                font-weight: 400;
-                                text-decoration: none;
+                                font-size: rem(20);
                             }
                             a:hover {
                                 color: $colorOrange;
@@ -835,9 +771,7 @@ ul {
         padding-top: rem(106);
         .main_cont {
             .main_find_your_custom {
-                // display: flex;
-                // align-items: center;
-                padding-bottom: rem(100);
+                padding-bottom: rem(30);
                 flex-wrap: wrap;
                 .main_find_your_custom_left {
                     max-width: rem(574);
@@ -850,47 +784,23 @@ ul {
                     }
                     // fix
                     & > p {
-                        // color: $colorBlack;
-                        // font-size: rem(16);
-                        // font-weight: 400;
-                        // line-height: rem(27);
-                        // letter-spacing: rem(1.15);
-                        // max-width: rem(467);
                         padding-bottom: rem(20);
                     }
                     & > div {
-                        position: relative;
-                        border-radius: rem(29);
-                        background: $colorWhite;
-                        box-shadow: 0px 17px 42px 0px rgba(0, 0, 0, 0.12);
-                        max-width: rem(459);
+                        // position: relative;
+                        // border-radius: rem(29);
+                        // background: $colorWhite;
+                        // box-shadow: 0px 17px 42px 0px rgba(0, 0, 0, 0.12);
+                        box-shadow: 0 0 0 0;
+                        // max-width: rem(459);
                         & > input:first-of-type {
-                            border: none;
-                            width: 100%;
-                            color: #bbb;
-                            font-size: rem(16);
-                            font-weight: 400;
-                            padding-top: rem(16);
-                            padding-left: rem(72);
-                            padding-bottom: rem(16);
-                            border-radius: rem(29);
-                            background-color: $colorWhite;
                             box-shadow: 0px 17px 42px 0px rgba(0, 0, 0, 0.12);
-                            background-image: url("../image/main/find_your_image/letter.svg");
-                            background-repeat: no-repeat;
-                            background-position: 7% 50%;
+                            margin-bottom: rem(20);
                         }
                         & > input:last-of-type {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            border: none;
-                            border-radius: rem(29);
-                            background: $colorOrange;
-                            color: $colorWhite;
-                            font-size: rem(16);
-                            font-weight: 700;
-                            padding: rem(16) rem(37);
+                            position: static;
+                            margin-bottom: rem(20);
+                            width: 100%;
                         }
                     }
                 }
@@ -898,9 +808,6 @@ ul {
                     picture {
                         img {
                             border-radius: rem(40) rem(40) rem(40) rem(40);
-                            max-width: rem(540);
-                            width: 100%;
-                            aspect-ratio: 540 / 764;
                         }
                     }
                 }
@@ -912,8 +819,8 @@ ul {
                     // align-items: center;
                     // column-gap: rem(94);
                     // margin: 0 auto;
-                    row-gap: rem(10);
-                    padding-bottom: rem(90);
+                    row-gap: rem(15);
+                    padding-bottom: rem(30);
                     flex-wrap: wrap;
                     & > li {
                         flex: 1 1 100%;
@@ -921,7 +828,7 @@ ul {
                         & > picture {
                             & > img {
                                 width: 100%;
-                                max-width: rem(330);
+                                max-width: rem(300);
                             }
                         }
                     }
@@ -931,23 +838,28 @@ ul {
         .main_we_provide {
             color: $colorBlack;
             .main_we_provide_wrapper {
-                max-width: rem(1205);
-                padding-left: calc(50% - 637px);
+                padding-left: rem(15);
                 padding-right: rem(15);
                 // fix
                 .main_we_provide_content {
-                    // display: flex;
-                    // align-items: center;
                     column-gap: rem(0);
                     flex-wrap: wrap;
-                    // padding-bottom: rem(154);
+                    row-gap: rem(20);
+                    padding-bottom: rem(30);
                     // fix
                     .main_we_provide_left {
-                        // position: relative;
-                        // display: flex;
-                        // align-items: center;
                         column-gap: rem(0);
                         flex-wrap: wrap;
+                        row-gap: rem(20);
+                        & > picture {
+                            width: 100%;
+                                max-width: rem(430);
+                            & > img {
+                                width: 100%;
+                                max-width: rem(430);
+                                border-radius: 20px;
+                            }
+                        }
                         & > div {
                             max-width: rem(300);
                             background-color: $colorWhite;
@@ -964,10 +876,10 @@ ul {
                         display: flex;
                         flex-direction: column;
                         & > h2 {
-                            font-size: rem(42);
-                            font-weight: 700;
-                            line-height: rem(62);
-                            letter-spacing: rem(0.8);
+                            font-size: rem(25);
+                            // font-weight: 700;
+                            line-height: rem(30);
+                            // letter-spacing: rem(0.8);
                             padding-bottom: rem(20);
                         }
                         & > p {
@@ -978,18 +890,13 @@ ul {
                             letter-spacing: rem(1.15);
                         }
                         & > p:last-of-type {
-                            padding-top: rem(20);
-                            padding-bottom: rem(40);
+                            padding-top: rem(10);
+                            padding-bottom: rem(20);
                         }
                         & > a {
-                            max-width: rem(172);
-                            padding: rem(18) rem(39);
-                            background-color: $colorOrange;
-                            color: $colorWhite;
-                            border-radius: rem(29);
-                            font-size: rem(16);
-                            font-weight: 700;
-                            text-decoration: none;
+                            max-width: 100%;
+                            width: 100%;
+                            text-align: center;
                         }
                     }
                 }
@@ -997,14 +904,9 @@ ul {
         }
         .main_cont {
             .main_start_using_our_product {
-                background-color: $colorGreen;
-                border-radius: rem(20);
-                display: flex;
-                justify-content: space-between;
-                padding-top: rem(60);
-                padding-right: rem(95);
-                overflow: hidden;
-                margin-bottom: rem(144);
+                padding-right: rem(10);
+                margin-bottom: rem(30);
+                padding-left: rem(10);
                 .main_start_using_left {
                     display: none;
                     & > picture {
@@ -1019,15 +921,10 @@ ul {
                     padding-bottom: rem(30);
                     & > h2 {
                         font-size: rem(25);
-                        font-weight: 700;
                         line-height: rem(20);
-                        letter-spacing: rem(0.8);
                     }
                     & > p {
-                        font-size: rem(16);
-                        font-weight: 400;
-                        line-height: rem(27);
-                        letter-spacing: rem(1.15);
+                        padding-bottom: rem(10);
                     }
                     & > div {
                         flex-wrap: wrap;
