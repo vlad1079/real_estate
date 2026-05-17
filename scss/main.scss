@@ -611,6 +611,10 @@ ul {
                 padding-bottom: rem(40);
             }
             .footer_soc_link {
+                & > ul {
+                    display: flex;
+                    column-gap: rem(30);
+                }
             }
         }
         .footer_right {
@@ -978,6 +982,7 @@ ul {
                         }
                     }
                     .main_we_serve_block._right {
+                        padding: rem(40) rem(35);
                         li:nth-of-type(1) {
                             // background-image: url("../image/main/we_serve/seller.svg");
                             // background-repeat: no-repeat;

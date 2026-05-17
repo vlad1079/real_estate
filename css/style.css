@@ -679,6 +679,14 @@ ul {
   max-width: 18.75rem;
   padding-bottom: 2.5rem;
 }
+.footer .footer_wrap .footer_left .footer_soc_link > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.875rem;
+     -moz-column-gap: 1.875rem;
+          column-gap: 1.875rem;
+}
 .footer .footer_wrap .footer_right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1035,6 +1043,9 @@ ul {
     padding-bottom: 1.875rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .main .main_cont .main_we_serve .main_we_serv_wrapper .main_we_serve_block._right {
+    padding: 2.5rem 2.1875rem;
   }
   .main .main_cont .main_we_serve .main_we_serv_wrapper .main_we_serve_block h2 {
     font-size: 1.5625rem;
