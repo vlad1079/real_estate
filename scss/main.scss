@@ -973,6 +973,7 @@ ul {
                     padding-bottom: rem(30);
                     flex-wrap: wrap;
                     .main_we_serve_block._left {
+                        padding: rem(40) rem(35);
                         li:nth-of-type(1) {
                             // background-image: url("../image/main/we_serve/buyersO.svg");
                             // background-repeat: no-repeat;
@@ -1070,6 +1071,7 @@ ul {
                     // text-align: center;
                     padding-bottom: rem(30);
                     flex-wrap: wrap;
+                    row-gap: rem(10);
                     .why_choose_us_block {
                         // display: flex;
                         // flex-direction: column;
@@ -1077,7 +1079,7 @@ ul {
                         // justify-content: space-around;
                         padding-bottom: rem(20);
                         li:nth-of-type(1) {
-                            // padding-bottom: rem(15);
+                            padding-bottom: rem(5);
                             picture {
                                 img {
                                     // width: 100%;
