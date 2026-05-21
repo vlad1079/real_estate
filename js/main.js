@@ -69,18 +69,20 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyLock() {
-    const lockPaddingValue =
-        window.innerWidth - document.querySelector("._container").offsetWidth + "px";
-        for (let index = 0; index < lockPadding.length; index++) {
-            const el = lockPadding[index];
-            el.style.paddingRight = lockPaddingValue;
-        }
-        body.style.paddingRight = lockPaddingValue;
-        body.classList.add("_lock");
-        unlock = false;
-        setTimeout(() => {
-            unlock = true;
-        }, timeout);
+    const lockPaddingValue = window.innerWidth - document.body.offsetWidth + "px";
+
+    for (let index = 0; index < lockPadding.length; index++) {
+        const el = lockPadding[index];
+        el.style.paddingRight = lockPaddingValue;
+    }
+
+    body.style.paddingRight = lockPaddingValue;
+    body.classList.add("_lock");
+
+    unlock = false;
+    setTimeout(() => {
+        unlock = true;
+    }, timeout);
 }
 
 function bodyUnLock() {
