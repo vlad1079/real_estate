@@ -16,7 +16,9 @@ $colorOrange: #f78434;
 $colorWhite: #fff;
 $colorGreen: #58bebf;
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     font-family: $fontFamily;
 }
@@ -643,9 +645,85 @@ ul {
     }
 }
 
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+.popup.open.popup_content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+.popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(30) rem(10);
+}
+.popup_content {
+    position: relative;
+    max-width: rem(500);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+    background-color: $colorWhite;
+    border-radius: rem(20);
+    padding: rem(30);
+    & > label {
+        color: $colorBlack;
+        font-size: rem(25);
+        line-height: rem(30);
+        padding-bottom: rem(20);
+    }
+    & > input {
+        color: $colorBlack;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: rem(27);
+        letter-spacing: rem(1.15);
+        padding: rem(10) 0 rem(10) rem(10);
+    }
+    & > a {
+        text-decoration: none;
+        border-radius: rem(29);
+        background-color: $colorOrange;
+        color: $colorWhite;
+        font-size: rem(16);
+        font-weight: 700;
+        padding: rem(16) rem(40);
+        position: absolute;
+        top: rem(10);
+        right: rem(10);
+    }
+    & > button {
+        margin-top: rem(20);
+        background-color: transparent;
+        border: none;
+        color: $colorBlack;
+        font-size: rem(20);
+        font-weight: 400;
+        line-height: rem(27);
+        letter-spacing: rem(1.15);
+        padding: rem(10);
+    }
+}
+
 // media < 767px
 @media screen and (max-width: 767px) {
-    
     .header {
         padding-top: rem(40);
         padding-bottom: rem(36);
@@ -854,7 +932,7 @@ ul {
                         row-gap: rem(20);
                         & > picture {
                             width: 100%;
-                                max-width: rem(430);
+                            max-width: rem(430);
                             & > img {
                                 width: 100%;
                                 max-width: rem(430);
@@ -1289,17 +1367,17 @@ ul {
                         align-items: center;
                         & > li {
                             width: 100%;
-                            max-width: rem(30);   
+                            max-width: rem(30);
                             & > a {
                                 text-decoration: none;
-                               & > img {
+                                & > img {
                                     width: 100%;
                                     max-width: rem(30);
                                 }
                             }
+                        }
+                    }
                 }
-            }
-            }
             }
             .footer_right {
                 // display: flex;
@@ -1329,8 +1407,7 @@ ul {
                 & > ul:last-of-type {
                     padding-bottom: 0;
                 }
-            
             }
+        }
     }
-}
 }

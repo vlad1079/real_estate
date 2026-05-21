@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header lock-padding">
         <section class="header_logo_menu _container">
             <a href="#" class="header_logo">
                 <picture>
@@ -123,7 +123,7 @@
                         tamque crudeli; sin, ut aliquid ex
                     </p>
                     <div>
-                        <a href="#">Contact Us</a>
+                        <a href="#popup" class="popup-link">Contact Us</a>
                         <a href="#">Watch now</a>
                     </div>
                 </div>
@@ -289,6 +289,18 @@
             </div>
         </div>
     </footer>
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <form method="POST" class="popup_content">
+                <a class="popup_close close-popup" href="">&#x2716;</a>
+                <label for="email-field">Registration</label>
+                <input type="email" id="email-field" name="email" placeholder="email" required>
+                <input type="text" name="fullname" placeholder="First Name & Last Name" required>
+                <input type="tel" name="tel" placeholder="Phone" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
     <script src="js/main.js"></script>
 </body>
 
