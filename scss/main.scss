@@ -83,6 +83,29 @@ ul {
                             color: $colorOrange;
                         }
                     }
+                    & > li:nth-of-type(6),
+                    & > li:nth-of-type(7) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .menu_auth {
+            & > ul {
+                display: flex;
+                align-items: center;
+                column-gap: rem(30);
+                & > li {
+                    a {
+                        color: $colorBlack;
+                        text-align: center;
+                        font-size: rem(16);
+                        font-weight: 400;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: $colorOrange;
+                    }
                 }
             }
         }
@@ -657,6 +680,7 @@ ul {
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.8s ease 0s;
+    font-family: $fontFamily;
 }
 .popup.open {
     opacity: 1;
@@ -687,7 +711,7 @@ ul {
         color: $colorBlack;
         font-size: rem(25);
         line-height: rem(30);
-        padding-bottom: rem(20);
+        font-weight: 500;
     }
     & > input {
         color: $colorBlack;
@@ -710,15 +734,15 @@ ul {
         right: rem(10);
     }
     & > button {
-        margin-top: rem(20);
-        background-color: transparent;
+        background-color: $colorOrange;
         border: none;
-        color: $colorBlack;
+        color: $colorWhite;
         font-size: rem(20);
         font-weight: 400;
         line-height: rem(27);
         letter-spacing: rem(1.15);
         padding: rem(10);
+        border-radius: rem(30);
     }
 }
 
@@ -830,6 +854,10 @@ ul {
                                 color: $colorOrange;
                             }
                         }
+                        & > li:nth-of-type(6),
+                        & > li:nth-of-type(7) {
+                            display: block;
+                        }
                     }
                 }
                 .header_nav._active {
@@ -845,6 +873,9 @@ ul {
                     background-color: #fff;
                 }
             }
+            .menu_auth {
+                    display: none;
+                }
         }
     }
 
@@ -907,7 +938,7 @@ ul {
                         & > picture {
                             & > img {
                                 width: 100%;
-                                max-width: rem(300);
+                                max-width: rem(270);
                             }
                         }
                     }
@@ -1409,5 +1440,8 @@ ul {
                 }
             }
         }
+    }
+    .popup {
+        z-index: 10;
     }
 }

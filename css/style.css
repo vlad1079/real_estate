@@ -83,6 +83,30 @@ ul {
 .header .header_logo_menu .header_menu .header_nav .header_nav_menu > li a:hover {
   color: #f78434;
 }
+.header .header_logo_menu .header_menu .header_nav .header_nav_menu > li:nth-of-type(6), .header .header_logo_menu .header_menu .header_nav .header_nav_menu > li:nth-of-type(7) {
+  display: none;
+}
+.header .header_logo_menu .menu_auth > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1.875rem;
+     -moz-column-gap: 1.875rem;
+          column-gap: 1.875rem;
+}
+.header .header_logo_menu .menu_auth > ul > li a {
+  color: #323232;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.header .header_logo_menu .menu_auth > ul > li a:hover {
+  color: #f78434;
+}
 
 .main {
   padding-top: 6.625rem;
@@ -734,6 +758,7 @@ ul {
   overflow-x: hidden;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  font-family: "Poppins", sans-serif;
 }
 
 .popup.open {
@@ -781,7 +806,7 @@ ul {
   color: #323232;
   font-size: 1.5625rem;
   line-height: 1.875rem;
-  padding-bottom: 1.25rem;
+  font-weight: 500;
 }
 .popup_content > input {
   color: #323232;
@@ -804,15 +829,15 @@ ul {
   right: 0.625rem;
 }
 .popup_content > button {
-  margin-top: 1.25rem;
-  background-color: transparent;
+  background-color: #f78434;
   border: none;
-  color: #323232;
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.6875rem;
   letter-spacing: 0.071875rem;
   padding: 0.625rem;
+  border-radius: 1.875rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -943,6 +968,9 @@ ul {
   .header .header_logo_menu .header_menu .header_nav .header_nav_menu > li a:hover {
     color: #f78434;
   }
+  .header .header_logo_menu .header_menu .header_nav .header_nav_menu > li:nth-of-type(6), .header .header_logo_menu .header_menu .header_nav .header_nav_menu > li:nth-of-type(7) {
+    display: block;
+  }
   .header .header_logo_menu .header_menu .header_nav._active {
     left: 0;
   }
@@ -954,6 +982,9 @@ ul {
     left: 0;
     height: 70px;
     background-color: #fff;
+  }
+  .header .header_logo_menu .menu_auth {
+    display: none;
   }
   .main {
     padding-top: 6.625rem;
@@ -1008,7 +1039,7 @@ ul {
   }
   .main .main_cont .main_company_logo > ul > li > picture > img {
     width: 100%;
-    max-width: 18.75rem;
+    max-width: 16.875rem;
   }
   .main .main_we_provide {
     color: #323232;
@@ -1393,5 +1424,8 @@ ul {
   }
   .footer .footer_wrap .footer_right > ul:last-of-type {
     padding-bottom: 0;
+  }
+  .popup {
+    z-index: 10;
   }
 }
