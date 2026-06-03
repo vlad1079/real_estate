@@ -566,6 +566,7 @@ ul {
 .main .main_cont .word_to_us .word_to_us_bottom .word_to_us_bottom_block > li:nth-of-type(1n + 2) {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+  padding-bottom: 0.3125rem;
 }
 .main .main_cont .word_to_us .word_to_us_bottom .word_to_us_bottom_block > li:nth-of-type(1n + 2) a {
   text-decoration: none;
@@ -577,7 +578,7 @@ ul {
   width: 100%;
 }
 .main .main_cont .word_to_us .word_to_us_bottom .word_to_us_bottom_block > li:nth-of-type(2) {
-  padding-bottom: 1.4375rem;
+  padding-bottom: 0.3125rem;
 }
 .main .main_cont .word_to_us .word_to_us_bottom .word_to_us_bottom_block > li:nth-of-type(2) span {
   font-size: 1rem;
@@ -838,6 +839,18 @@ ul {
   letter-spacing: 0.071875rem;
   padding: 0.625rem;
   border-radius: 1.875rem;
+}
+.popup_content > li > h2 {
+  color: #323232;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+}
+.popup_content > li > p, .popup_content > li > a {
+  color: #323232;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {

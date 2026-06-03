@@ -44,13 +44,22 @@ if (popupCloseIcon.length > 0) {
 
 function popupOpen(curentPopup) {
     if (curentPopup && unlock) {
+
+        if (iconMenu && iconMenu.classList.contains("_active")) {
+            iconMenu.classList.remove("_active");
+            document.querySelector(".header_nav").classList.remove("_active");
+        }
+
         const popupActive = document.querySelector(".popup.open");
+
         if (popupActive) {
             popupClose(popupActive, false);
         } else {
             bodyLock();
         }
+
         curentPopup.classList.add("open");
+
         curentPopup.addEventListener("click", (e) => {
             if (!e.target.closest(".popup_content")) {
                 popupClose(e.target.closest(".popup"));
@@ -101,9 +110,11 @@ function bodyUnLock() {
 }
 
 document.addEventListener("keydown", (e) => {
-    if (e.which === 27) {
+    if (e.key === "Escape") {
         const popupActive = document.querySelector(".popup.open");
-        popupClose(popupActive);
+        if (popupActive) {
+            popupClose(popupActive);
+        }
     }
 });
 
